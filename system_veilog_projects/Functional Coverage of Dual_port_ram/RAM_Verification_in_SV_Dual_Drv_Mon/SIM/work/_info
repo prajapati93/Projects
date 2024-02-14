@@ -1,0 +1,185 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/INDICUS/Projects/RAM_info/RAM_Verification_in_SV_Dual_Drv_Mon/SIM
+T_opt
+!s110 1683722167
+VD5K>oNQ2OMEDZU4HLQ=Vo2
+Z1 04 10 4 work ram_tb_top fast 0
+=1-ec8eb5524e14-645b8fb7-1c3-3b48
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.4e;61
+R0
+T_opt1
+!s110 1685011204
+VQBzZz>h3N:K@?3a6W8>;G3
+R1
+=1-ec8eb5524e14-646f3b01-2b0-300c
+R2
+n@_opt1
+R3
+R0
+varray
+Z4 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1683470510
+!i10b 1
+!s100 [>5KbLj9o@4:`;G=TPL383
+Iib[0Z4KW>hM5O28h]?c_J3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 matrix_row_column_max_sv_unit
+S1
+R0
+w1683207060
+8matrix_row_column_max.sv
+Fmatrix_row_column_max.sv
+L0 2
+Z6 OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1683470510.000000
+!s107 matrix_row_column_max.sv|
+!s90 matrix_row_column_max.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vram
+Z7 !s110 1686046637
+!i10b 1
+!s100 6VTBORHSZQ4g@;dQKAk2D1
+I5@?mkKRD>_NX?1f2<2djL0
+R5
+Z8 dD:/INDICUS/Projects/SV_Projects/Functional Coverage of Dual_port_ram/RAM_Verification_in_SV_Dual_Drv_Mon/SIM
+w1683292616
+8../RTL/ram_16x8.v
+F../RTL/ram_16x8.v
+L0 11
+R6
+r1
+!s85 0
+31
+Z9 !s108 1686046637.000000
+Z10 !s107 ..\TEST\ram_base_test.sv|..\TEST\ram_rst_test.sv|..\TEST\ram_hr_test.sv|..\TEST\ram_lr_test.sv|..\TEST\ram_mem_test.sv|..\TEST\ram_sim_test.sv|..\TEST\ram_wr_test.sv|..\ENV/ram_env.sv|..\ENV/ram_wm.sv|..\ENV/ram_wd.sv|..\ENV/ram_sb.sv|..\ENV/ram_rf.sv|..\ENV/ram_rm.sv|..\ENV/ram_rd.sv|..\ENV/ram_gen.sv|..\ENV/ram_trans.sv|..\ENV/ram_defines.sv|..\ENV/ram_interface.sv|../TOP/ram_top.sv|../TEST/ram_pkg.sv|../RTL/ram_16x8.v|
+Z11 !s90 ../RTL/ram_16x8.v|../TEST/ram_pkg.sv|../TOP/ram_top.sv|+incdir+..\ENV|+incidr+..\TEST|
+!i113 0
+Z12 o{+incidr+..\TEST} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 {+incdir+..\ENV} {+incidr+..\TEST} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Yram_if
+R4
+R7
+!i10b 1
+!s100 NMb86d7@bhi=MZPMN<M`J1
+I1oNh28H9aLE5S^^^@YHc=3
+R5
+!s105 ram_pkg_sv_unit
+S1
+R8
+w1685666816
+8..\ENV/ram_interface.sv
+F..\ENV/ram_interface.sv
+L0 8
+R6
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Xram_pkg
+R4
+R7
+!i10b 1
+!s100 <jZ?l]^3L?9`hMCDS^lLW0
+I<el7OVZdhf]LVCF8LkA0A3
+V<el7OVZdhf]LVCF8LkA0A3
+S1
+R8
+w1686046417
+8../TEST/ram_pkg.sv
+F../TEST/ram_pkg.sv
+F..\ENV/ram_defines.sv
+F..\ENV/ram_trans.sv
+F..\ENV/ram_gen.sv
+F..\ENV/ram_rd.sv
+F..\ENV/ram_rm.sv
+F..\ENV/ram_rf.sv
+F..\ENV/ram_sb.sv
+F..\ENV/ram_wd.sv
+F..\ENV/ram_wm.sv
+F..\ENV/ram_env.sv
+F..\TEST\ram_wr_test.sv
+F..\TEST\ram_sim_test.sv
+F..\TEST\ram_mem_test.sv
+F..\TEST\ram_lr_test.sv
+F..\TEST\ram_hr_test.sv
+F..\TEST\ram_rst_test.sv
+F..\TEST\ram_base_test.sv
+L0 9
+R6
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vram_tb_top
+R4
+Z14 DXx4 work 7 ram_pkg 0 22 jMW^C>DV^=>5JX8D]=bC53
+DXx4 work 18 ram_tb_top_sv_unit 0 22 MVV>czHY5M9InQ:KmdEJa0
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 WWnG=YV@`ROL^4gNnL1kX0
+I:VPhP^_hV0D=5T<SP^7LM3
+!s105 ram_tb_top_sv_unit
+S1
+R8
+Z15 w1683855549
+Z16 8..\TOP\ram_tb_top.sv
+Z17 F..\TOP\ram_tb_top.sv
+L0 9
+R6
+Z18 !s108 1685666834.000000
+Z19 !s107 ..\TEST\ram_base_test.sv|..\TEST\ram_rst_test.sv|..\TEST\ram_hr_test.sv|..\TEST\ram_lr_test.sv|..\TEST\ram_mem_test.sv|..\TEST\ram_sim_test.sv|..\TEST\ram_wr_test.sv|..\ENV/ram_env.sv|..\ENV/ram_wm.sv|..\ENV/ram_wd.sv|..\ENV/ram_sb.sv|..\ENV/ram_rf.sv|..\ENV/ram_rm.sv|..\ENV/ram_rd.sv|..\ENV/ram_gen.sv|..\ENV/ram_trans.sv|..\ENV/ram_defines.sv|..\ENV/ram_interface.sv|..\TOP\ram_tb_top.sv|..\TEST\ram_pkg.sv|..\RTL\ram_16x8.v|
+Z20 !s90 ..\RTL\ram_16x8.v|..\TEST\ram_pkg.sv|..\TOP\ram_tb_top.sv|+incdir+..\ENV|+incidr+..\TEST|
+!i113 0
+R12
+R13
+Xram_tb_top_sv_unit
+R4
+R14
+VMVV>czHY5M9InQ:KmdEJa0
+r1
+!s85 0
+31
+!i10b 1
+!s100 STmY1kl2HXBH=SZl5=RgQ0
+IMVV>czHY5M9InQ:KmdEJa0
+!i103 1
+S1
+R8
+R15
+R16
+R17
+L0 8
+R6
+R18
+R19
+R20
+!i113 0
+R12
+R13

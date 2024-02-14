@@ -1,0 +1,159 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/INDICUS/Projects/SV_Projects/Fifo/SIM
+vfifo
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 b@NhVnkHULmao]5UCQ[C53
+Ia4QBmN_f<G1N?k]SW=UEo1
+Z3 !s105 fifo1_sv_unit
+S1
+R0
+w1687089546
+Z4 8../RTL/fifo1.sv
+Z5 F../RTL/fifo1.sv
+L0 6
+Z6 OL;L;10.4e;61
+Z7 !s108 1687092416.000000
+Z8 !s107 ../TEST/fifo_test.sv|../ENV/fifo_env.sv|../ENV/fifo_sb.sv|../ENV/fifo_rf.sv|../ENV/fifo_monitor.sv|../ENV/fifo_driver.sv|../ENV/fifo_gen.sv|../ENV/fifo_trans.sv|../TOP/fifo_top.sv|../TEST/fifo_pkg.sv|../RTL/fifo1.sv|../ENV/fifo_if.sv|
+Z9 !s90 ../ENV/fifo_if.sv|../RTL/fifo1.sv|../TEST/fifo_pkg.sv|../TOP/fifo_top.sv|+incdir+../ENV|+incdir+../TEST|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 +incdir+../ENV +incdir+../TEST -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Yfifo_if
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^@768C@4P3Hj88?Ch>Ea;2
+IHolid0mTd@7`1aIE181Tj0
+!s105 fifo_if_sv_unit
+S1
+R0
+w1687010628
+8../ENV/fifo_if.sv
+F../ENV/fifo_if.sv
+L0 8
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+Xfifo_pkg
+R1
+Vg]c<L:Q4_[M0R0SG2PkBa0
+r1
+!s85 0
+31
+!i10b 1
+!s100 mHjR3nDjBoIbilAihEVOk1
+Ig]c<L:Q4_[M0R0SG2PkBa0
+S1
+R0
+w1687092413
+8../TEST/fifo_pkg.sv
+F../TEST/fifo_pkg.sv
+F../ENV/fifo_trans.sv
+F../ENV/fifo_gen.sv
+F../ENV/fifo_driver.sv
+F../ENV/fifo_monitor.sv
+F../ENV/fifo_rf.sv
+F../ENV/fifo_sb.sv
+F../ENV/fifo_env.sv
+L0 8
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+Xfifo_top_sv_unit
+R1
+Z12 DXx4 work 8 fifo_pkg 0 22 g]c<L:Q4_[M0R0SG2PkBa0
+Vz[4WAUo[0^dikGkYZ3jH?1
+r1
+!s85 0
+31
+!i10b 1
+!s100 zTYLCPi@6lQcOhLQB=Y;U3
+Iz[4WAUo[0^dikGkYZ3jH?1
+!i103 1
+S1
+R0
+Z13 w1687018216
+Z14 8../TOP/fifo_top.sv
+Z15 F../TOP/fifo_top.sv
+F../TEST/fifo_test.sv
+L0 8
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vSync_FIFO
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 LoSiO@Po[kKLa7[VQ3cRe2
+Im4^ebR6Q:Z>knoGez_oT:1
+R3
+S1
+R0
+w1687088494
+R4
+R5
+L0 6
+R6
+!s108 1687088884.000000
+R8
+R9
+!i113 0
+R10
+R11
+n@sync_@f@i@f@o
+vtop
+R1
+R12
+DXx4 work 16 fifo_top_sv_unit 0 22 z[4WAUo[0^dikGkYZ3jH?1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 J_OG;<7PJUD?RSOlIF@8[1
+IB1_R@[8?oFgLH4=LD@ZmX3
+!s105 fifo_top_sv_unit
+S1
+R0
+R13
+R14
+R15
+L0 10
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11

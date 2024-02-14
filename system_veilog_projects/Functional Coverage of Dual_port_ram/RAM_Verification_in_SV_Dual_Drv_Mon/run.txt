@@ -1,0 +1,5 @@
+
+
+vlog ..\RTL\ram_16x8.v ..\TEST\ram_pkg.sv ..\TOP\ram_tb_top.sv +incdir+..\ENV +incidr+..\TEST
+
+vsim tam_tb_top

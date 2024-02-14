@@ -1,0 +1,6 @@
+Start time: 01:48:46 on Jun 02,2023
+qverilog ram_tb_top 
+** Error: (qverilog-7) Failed to open design unit file "ram_tb_top" in read mode.
+No such file or directory. (errno = ENOENT)
+End time: 01:48:46 on Jun 02,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

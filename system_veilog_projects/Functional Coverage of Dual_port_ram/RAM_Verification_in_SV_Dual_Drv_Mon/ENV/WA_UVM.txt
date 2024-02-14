@@ -1,0 +1,36 @@
+DPI in SV
+//SV code
+module exp(input In, output Out);
+  //importing c function through DPI (note: we can call both user define and inbuilt function of c)
+  import "DPI" function void read(input int a);
+
+//exporting SV function through DPI 
+  export "DPI" function write;        // Note – not a function prototype
+
+     //calling a C function
+      read(b); 
+
+  //Below function can be called from c language
+  function void write(int b);
+      b = 10;
+  endfunction
+  ...
+endmodule
+
+
+//C code
+extern void write(int);    // Imported from SV
+
+void read(const int i)   
+{  
+  :
+}
+
+
+
+
+* UVM *
+
+• get_full_name() - returns a full-path string name to the current object.
+• get_name() - returns the string name of the current object but not the full path.
+• this - returns a full path class handle to the current object.

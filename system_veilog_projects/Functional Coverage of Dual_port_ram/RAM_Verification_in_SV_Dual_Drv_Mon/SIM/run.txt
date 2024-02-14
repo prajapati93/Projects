@@ -1,0 +1,7 @@
+
+
+vlog ..\RTL\ram_16x8.v ..\TEST\ram_pkg.sv ..\TOP\ram_tb_top.sv +incdir+..\ENV +incidr+..\TEST
+
+vsim -novopt ram_tb_top -c -do "run -all;exit"
+vsim -novopt ram_tb_top -c -do "run -all;exit" +HRNG_DATA_TEST
+vsim -novopt ram_tb_top -c -do "run -all;exit" +LRNG_DATA_TEST

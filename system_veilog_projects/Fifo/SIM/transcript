@@ -1,0 +1,83 @@
+# //  Questa Sim-64
+# //  Version 10.4e win64 Apr  9 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# vsim -novopt top 
+# Start time: 13:47:33 on Jun 18,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.fifo_pkg
+# Loading work.fifo_top_sv_unit
+# Loading work.top
+# Loading work.fifo_if
+# Loading work.fifo
+do wave.do
+# DATA MISMATCH!rd_data : 0 : x : exp_data
+# DATA MISMATCH!rd_data : 0 : x : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# DATA MISMATCH!rd_data : 65 : 54 : exp_data
+# ** Note: $finish    : ../TOP/fifo_top.sv(48)
+#    Time: 535 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at ../TOP/fifo_top.sv line 48
+# End time: 15:25:38 on Jun 18,2023, Elapsed time: 1:38:05
+# Errors: 0, Warnings: 1

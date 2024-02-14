@@ -1,0 +1,29 @@
+# vsim -novopt top -c -do "run -all;exit" 
+# Start time: 12:06:21 on Jul 09,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  Questa Sim-64
+# //  Version 10.4e win64 Apr  9 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.top
+# ** Error: (vsim-3033) ../TOP/apb_top.sv(10): Instantiation of 'apb_if' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /top File: ../TOP/apb_top.sv
+#         Searched libraries:
+#             D:/INDICUS/Projects/SV_Projects/VERIFICATION OF APB PROTOCOL/SIM/work
+# Loading work.apb_ram
+# Error loading design
+# End time: 12:06:22 on Jul 09,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1

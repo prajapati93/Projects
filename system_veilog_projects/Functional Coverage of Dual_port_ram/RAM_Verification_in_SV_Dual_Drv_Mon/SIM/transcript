@@ -1,0 +1,10 @@
+# vsim -coverage -vopt ram_top -c -do "coverage save onexit -directive -cvg -codeall ram_cov; run -all; exit" 
+# Start time: 11:18:17 on Jun 06,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: (vopt-13130) Failed to find design unit work.ram_top.
+# 
+# Optimization failed
+# Error loading design
+# End time: 11:18:18 on Jun 06,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
