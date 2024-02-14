@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Mar 29 00:55:04 2023
+# Process ID: 16664
+# Current directory: D:/INDICUS/Projects/V_Projects/FSM/rr_arbiter/rr_arbiter/rr_arbiter.runs/impl_1
+# Command line: vivado.exe -log rr_arbiter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rr_arbiter.tcl -notrace
+# Log file: D:/INDICUS/Projects/V_Projects/FSM/rr_arbiter/rr_arbiter/rr_arbiter.runs/impl_1/rr_arbiter.vdi
+# Journal file: D:/INDICUS/Projects/V_Projects/FSM/rr_arbiter/rr_arbiter/rr_arbiter.runs/impl_1\vivado.jou
+# Running On: Mehul, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 2, Host memory: 12769 MB
+#-----------------------------------------------------------
+source rr_arbiter.tcl -notrace

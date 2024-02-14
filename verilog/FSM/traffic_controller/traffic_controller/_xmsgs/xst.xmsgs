@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"E:\INDICUS\Projects\V_Projects\FSM\traffic_controller\traffic_controller.v" Line 76: Signal &lt;<arg fmt="%s" index="1">clk</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="608" delta="new" >"E:\INDICUS\Projects\V_Projects\FSM\traffic_controller\traffic_controller.v" Line 76: Multiple event control statements in one always/initial process block are not supported in this case.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"E:\INDICUS\Projects\V_Projects\FSM\traffic_controller\traffic_controller.v" Line 19: Empty module &lt;<arg fmt="%s" index="1">traffic_controller</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

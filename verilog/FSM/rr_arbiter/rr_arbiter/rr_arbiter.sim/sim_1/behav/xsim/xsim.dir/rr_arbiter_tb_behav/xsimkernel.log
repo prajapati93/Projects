@@ -1,0 +1,4 @@
+Running: xsim.dir/rr_arbiter_tb_behav/xsimk.exe -simmode gui -wdb rr_arbiter_tb_behav.wdb -simrunnum 0 -socket 59450
+Design successfully loaded
+Design Loading Memory Usage: 7388 KB (Peak: 7388 KB)
+Design Loading CPU Usage: 15 ms

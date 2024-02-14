@@ -1,0 +1,36 @@
+ISim log file
+Running: E:\INDICUS\Projects\V_Projects\FSM\traffic_controller\traffic_controller\traffic_controller_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/INDICUS/Projects/V_Projects/FSM/traffic_controller/traffic_controller/traffic_controller_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                   0highway = 10 country = 00 ctrl = 0
+                 200highway = 10 country = 00 ctrl = 1
+                 205highway = 01 country = 00 ctrl = 1
+                 245highway = 00 country = 00 ctrl = 1
+                 275highway = 00 country = 10 ctrl = 1
+                 300highway = 00 country = 10 ctrl = 0
+                 305highway = 00 country = 01 ctrl = 0
+                 345highway = 10 country = 00 ctrl = 0
+                 500highway = 10 country = 00 ctrl = 1
+                 505highway = 01 country = 00 ctrl = 1
+                 545highway = 00 country = 00 ctrl = 1
+                 575highway = 00 country = 10 ctrl = 1
+                 600highway = 00 country = 10 ctrl = 0
+                 605highway = 00 country = 01 ctrl = 0
+                 645highway = 10 country = 00 ctrl = 0
+                 800highway = 10 country = 00 ctrl = 1
+                 805highway = 01 country = 00 ctrl = 1
+                 845highway = 00 country = 00 ctrl = 1
+                 875highway = 00 country = 10 ctrl = 1
+                 900highway = 00 country = 10 ctrl = 0
+                 905highway = 00 country = 01 ctrl = 0
+                 945highway = 10 country = 00 ctrl = 0
+Stopped at time : 1 us :  in File "E:/INDICUS/Projects/V_Projects/FSM/traffic_controller/traffic_controller_tb.v" Line 36 

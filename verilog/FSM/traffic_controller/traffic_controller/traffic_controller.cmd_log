@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/INDICUS/Projects/V_Projects/FSM/traffic_controller/traffic_controller/traffic_controller.xst" -ofn "E:/INDICUS/Projects/V_Projects/FSM/traffic_controller/traffic_controller/traffic_controller.syr" 
