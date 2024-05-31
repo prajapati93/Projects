@@ -1,0 +1,180 @@
+# vsim -novopt top -c -do "run -all;exit" 
+# Start time: 21:51:25 on May 31,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  Questa Sim-64
+# //  Version 10.4e win64 Apr  9 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_pkg
+# Loading work.top
+# Loading work.apb_if
+# Loading work.apb_ram
+# run -all
+# [DRV] : RESET DONE!
+# [GEN] : OP :read paddr :2 pwdata :7 psel :0 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [DRV] : DATA READ OP data: 2
+# [MON] : DATA Read data:0 and addr:2 write:0
+# [SCO]: DATA RECIEVED wdata:0 rdata:0 addr:2 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :write paddr :2 pwdata :8 psel :0 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:8 and addr:2 write:1
+# [DRV] : DATA WRITE OP data: 8 and addr: 2
+# [SCO]: DATA RECIEVED wdata:8 rdata:0 addr:2 write:1
+# [SCO]: DATA STORED data:8 addr:2
+# [GEN] : OP :error paddr :3 pwdata :7 psel :1 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:7 and addr:80 write:1
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:7 rdata:0 addr:80 write:1
+# [SCO] : SLV ERROR DETECTED
+# [GEN] : OP :random paddr :4 pwdata :5 psel :1 penable :1 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:0 and addr:4 write:0
+# [DRV] : RANDOM OPERATION
+# [SCO]: DATA RECIEVED wdata:7 rdata:0 addr:4 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :write paddr :4 pwdata :6 psel :1 penable :1 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:6 and addr:4 write:1
+# [DRV] : DATA WRITE OP data: 6 and addr: 4
+# [SCO]: DATA RECIEVED wdata:6 rdata:0 addr:4 write:1
+# [SCO]: DATA STORED data:6 addr:4
+# [GEN] : OP :random paddr :2 pwdata :9 psel :0 penable :0 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:9 and addr:2 write:1
+# [DRV] : RANDOM OPERATION
+# [SCO]: DATA RECIEVED wdata:9 rdata:0 addr:2 write:1
+# [SCO]: DATA STORED data:9 addr:2
+# [GEN] : OP :read paddr :2 pwdata :7 psel :0 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:9 and addr:2 write:0
+# [DRV] : DATA READ OP data: 2
+# [SCO]: DATA RECIEVED wdata:9 rdata:9 addr:2 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :error paddr :4 pwdata :4 psel :1 penable :0 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:x and addr:98 write:0
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:9 rdata:0 addr:98 write:0
+# [SCO] : SLV ERROR DETECTED
+# [GEN] : OP :read paddr :3 pwdata :9 psel :1 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:0 and addr:3 write:0
+# [DRV] : DATA READ OP data: 3
+# [SCO]: DATA RECIEVED wdata:9 rdata:0 addr:3 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :random paddr :3 pwdata :7 psel :0 penable :1 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:0 and addr:3 write:0
+# [DRV] : RANDOM OPERATION
+# [SCO]: DATA RECIEVED wdata:9 rdata:0 addr:3 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :write paddr :3 pwdata :7 psel :1 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:7 and addr:3 write:1
+# [DRV] : DATA WRITE OP data: 7 and addr: 3
+# [SCO]: DATA RECIEVED wdata:7 rdata:0 addr:3 write:1
+# [SCO]: DATA STORED data:7 addr:3
+# [GEN] : OP :error paddr :3 pwdata :9 psel :1 penable :0 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:9 and addr:37 write:1
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:9 rdata:0 addr:37 write:1
+# [SCO] : SLV ERROR DETECTED
+# [GEN] : OP :random paddr :3 pwdata :6 psel :1 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:6 and addr:3 write:1
+# [DRV] : RANDOM OPERATION
+# [SCO]: DATA RECIEVED wdata:6 rdata:0 addr:3 write:1
+# [SCO]: DATA STORED data:6 addr:3
+# [GEN] : OP :read paddr :4 pwdata :2 psel :0 penable :1 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:6 and addr:4 write:0
+# [DRV] : DATA READ OP data: 4
+# [SCO]: DATA RECIEVED wdata:6 rdata:6 addr:4 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :write paddr :3 pwdata :2 psel :1 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:2 and addr:3 write:1
+# [DRV] : DATA WRITE OP data: 2 and addr: 3
+# [SCO]: DATA RECIEVED wdata:2 rdata:6 addr:3 write:1
+# [SCO]: DATA STORED data:2 addr:3
+# [GEN] : OP :error paddr :2 pwdata :9 psel :1 penable :0 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:x and addr:68 write:0
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:2 rdata:0 addr:68 write:0
+# [SCO] : SLV ERROR DETECTED
+# [GEN] : OP :error paddr :3 pwdata :9 psel :0 penable :0 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:9 and addr:39 write:1
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:9 rdata:0 addr:39 write:1
+# [SCO] : SLV ERROR DETECTED
+# [GEN] : OP :write paddr :2 pwdata :5 psel :1 penable :0 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:5 and addr:2 write:1
+# [DRV] : DATA WRITE OP data: 5 and addr: 2
+# [SCO]: DATA RECIEVED wdata:5 rdata:0 addr:2 write:1
+# [SCO]: DATA STORED data:5 addr:2
+# [GEN] : OP :random paddr :3 pwdata :6 psel :0 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:6 and addr:3 write:1
+# [DRV] : RANDOM OPERATION
+# [SCO]: DATA RECIEVED wdata:6 rdata:0 addr:3 write:1
+# [SCO]: DATA STORED data:6 addr:3
+# [GEN] : OP :read paddr :3 pwdata :7 psel :1 penable :0 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:6 and addr:3 write:0
+# [DRV] : DATA READ OP data: 3
+# [SCO]: DATA RECIEVED wdata:6 rdata:6 addr:3 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :read paddr :2 pwdata :3 psel :0 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:5 and addr:2 write:0
+# [DRV] : DATA READ OP data: 2
+# [SCO]: DATA RECIEVED wdata:6 rdata:5 addr:2 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :write paddr :4 pwdata :3 psel :1 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:3 and addr:4 write:1
+# [DRV] : DATA WRITE OP data: 3 and addr: 4
+# [SCO]: DATA RECIEVED wdata:3 rdata:5 addr:4 write:1
+# [SCO]: DATA STORED data:3 addr:4
+# [GEN] : OP :error paddr :4 pwdata :6 psel :0 penable :0 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:x and addr:40 write:0
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:3 rdata:0 addr:40 write:0
+# [SCO] : SLV ERROR DETECTED
+# [GEN] : OP :random paddr :4 pwdata :7 psel :0 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:7 and addr:4 write:1
+# [DRV] : RANDOM OPERATION
+# [SCO]: DATA RECIEVED wdata:7 rdata:0 addr:4 write:1
+# [SCO]: DATA STORED data:7 addr:4
+# [GEN] : OP :random paddr :3 pwdata :9 psel :1 penable :0 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:6 and addr:3 write:0
+# [DRV] : RANDOM OPERATION
+# [SCO]: DATA RECIEVED wdata:7 rdata:6 addr:3 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :read paddr :3 pwdata :9 psel :0 penable :1 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:6 and addr:3 write:0
+# [DRV] : DATA READ OP data: 3
+# [SCO]: DATA RECIEVED wdata:7 rdata:6 addr:3 write:0
+# [SCO] : DATA MISMATCHED
+# [GEN] : OP :write paddr :3 pwdata :3 psel :0 penable :1 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:3 and addr:3 write:1
+# [DRV] : DATA WRITE OP data: 3 and addr: 3
+# [SCO]: DATA RECIEVED wdata:3 rdata:6 addr:3 write:1
+# [SCO]: DATA STORED data:3 addr:3
+# [GEN] : OP :error paddr :4 pwdata :8 psel :0 penable :1 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:x and addr:89 write:0
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:3 rdata:0 addr:89 write:0
+# [SCO] : SLV ERROR DETECTED
+# [GEN] : OP :write paddr :4 pwdata :7 psel :1 penable :0 pwrite :1 prdata :0 pready :0 pslverr :0
+# [MON] : DATA WRITE data:7 and addr:4 write:1
+# [DRV] : DATA WRITE OP data: 7 and addr: 4
+# [SCO]: DATA RECIEVED wdata:7 rdata:0 addr:4 write:1
+# [SCO]: DATA STORED data:7 addr:4
+# [GEN] : OP :error paddr :3 pwdata :2 psel :0 penable :1 pwrite :0 prdata :0 pready :0 pslverr :0
+# [MON] : DATA Read data:x and addr:81 write:0
+# [DRV] : SOLVE  ERROR
+# [SCO]: DATA RECIEVED wdata:7 rdata:0 addr:81 write:0
+# [SCO] : SLV ERROR DETECTED
+# ** Note: $finish    : ../ENV/apb_env.sv(61)
+#    Time: 3190 ns  Iteration: 3  Instance: /top
+# End time: 21:51:28 on May 31,2024, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

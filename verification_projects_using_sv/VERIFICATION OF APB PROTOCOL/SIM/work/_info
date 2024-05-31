@@ -1,0 +1,141 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/INDICUS/Projects/SV_Projects/VERIFICATION OF APB PROTOCOL/SIM
+T_opt
+!s110 1688589649
+VOOc>K6`fOP8DZB;MfhJfd2
+04 7 4 work apb_ram fast 0
+=1-ec8eb5524e14-64a5d551-158-1938
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4e;61
+R0
+Yabp_if
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1715700333
+!i10b 1
+!s100 nm9aN3fZn`c?3431`BH;z0
+I:]L`clC;=K;UnAD;P?`z^0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 apb_if_sv_unit
+S1
+Z4 dD:/INDICUS/00. PROJECTS/SV_Projects/My_Projects/VERIFICATION OF APB PROTOCOL/SIM
+w1707908155
+Z5 8../ENV/apb_if.sv
+Z6 F../ENV/apb_if.sv
+L0 9
+Z7 OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1715700333.000000
+Z8 !s107 ../ENV/apb_env.sv|../ENV/apb_sco.sv|../ENV/apb_mon.sv|../ENV/apb_drv.sv|../ENV/apb_gen.sv|../ENV/apb_trans.sv|../TOP/apb_top.sv|../TEST/apb_pkg.sv|../RTL/apb_rtl.sv|../ENV/apb_if.sv|
+Z9 !s90 ../ENV/apb_if.sv|../RTL/apb_rtl.sv|../TEST/apb_pkg.sv|../TOP/apb_top.sv|+incdir+../ENV|+incdir+../TEST|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 +incdir+../ENV +incdir+../TEST -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Yapb_if
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 BDW7=QY04NMRh3EA8E4hX3
+ISDYzd>S``18Kj8Z>iJ[9g0
+R3
+S1
+R4
+w1715700392
+R5
+R6
+L0 9
+R7
+Z12 !s108 1715867944.000000
+R8
+R9
+!i113 0
+R10
+R11
+Xapb_pkg
+R1
+V:X?G:_Z=aO^aK2W]1JNTg1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?lJHjeUQK>U8`RAZ[;Mmi0
+I:X?G:_Z=aO^aK2W]1JNTg1
+S1
+R4
+w1715867941
+8../TEST/apb_pkg.sv
+F../TEST/apb_pkg.sv
+F../ENV/apb_trans.sv
+F../ENV/apb_gen.sv
+F../ENV/apb_drv.sv
+F../ENV/apb_mon.sv
+F../ENV/apb_sco.sv
+F../ENV/apb_env.sv
+L0 8
+R7
+R12
+R8
+R9
+!i113 0
+R10
+R11
+vapb_ram
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 JHN]Y5kQkc=iXEGDB8Sfd2
+IfEa96_5XUF`PHnjj[O_^[2
+!s105 apb_rtl_sv_unit
+S1
+R4
+w1707908060
+8../RTL/apb_rtl.sv
+F../RTL/apb_rtl.sv
+L0 11
+R7
+R12
+R8
+R9
+!i113 0
+R10
+R11
+vtop
+R1
+DXx4 work 7 apb_pkg 0 22 :X?G:_Z=aO^aK2W]1JNTg1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 3_Aj00mfbll?m_]lL:nD71
+IQWhZ0iIQBZo?Ab;]1nn]B0
+!s105 apb_top_sv_unit
+S1
+R4
+w1707908596
+8../TOP/apb_top.sv
+F../TOP/apb_top.sv
+L0 8
+R7
+R12
+R8
+R9
+!i113 0
+R10
+R11
