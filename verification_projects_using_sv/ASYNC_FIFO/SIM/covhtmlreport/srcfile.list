@@ -1,0 +1,7 @@
+../ENV/afifo_gen.sv
+../ENV/afifo_sb.sv
+../TEST/afifo_pkg.sv
+../TEST/half_write_test.sv
+../TEST/write_only_test.sv
+../TEST/write_read_test.sv
+../TEST/write_then_read_test.sv

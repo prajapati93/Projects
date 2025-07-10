@@ -1,0 +1,4 @@
+var g_db_data = [
+{dummy:0},
+{name:'cvg',f:1,type:6,id:29,tb:'26',h:'17',m:'9',hp:'65.38%',cov:['68.75%','Y'],g:'100.00%',gp:['68.75%','Y'],hdlPath:'/afifo_pkg/afifo_sb',parent:'28'}];
+processConsCovergroupsData(g_db_data);

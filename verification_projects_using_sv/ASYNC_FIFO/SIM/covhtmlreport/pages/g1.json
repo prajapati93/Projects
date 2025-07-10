@@ -1,0 +1,7 @@
+var g_data = {
+g28:[{dummy:0},
+{name:'cvg',f:1,type:1,id:29,tb:'26',h:'17',m:'9',hp:'65.38%',cov:['68.75%','Y'],g:'100.00%',gp:['68.75%','Y'],parent:'28'},
+{name:'\\/afifo_pkg::afifo_sb::cvg ',f:1,type:2,id:42,tb:'26',h:'17',m:'9',hp:'65.38%',cov:['68.75%','Y'],g:'100.00%',gp:['68.75%','Y'],cvg:'cvg',parent:'29'}],
+dummyEnd:0
+};
+processCovergroupsData(g_data);

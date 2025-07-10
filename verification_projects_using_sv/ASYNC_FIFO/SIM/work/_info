@@ -1,0 +1,195 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/INDICUS/00. PROJECTS/SV_Projects/My_Projects/ASYNC_FIFO/SIM
+T_opt
+!s110 1751346158
+VSL[LzGZ?nOW[T^6i8VS^O1
+Z1 04 3 4 work top fast 0
+=1-ec8eb5524e14-68636bee-99-2f0c
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4e;61
+R0
+T_opt1
+!s110 1752101610
+Vo_PPJl>YFU1Y2a3ljQShO3
+R1
+=1-ec8eb5524e14-686ef2e9-35a-a7c
+R2
+Z3 tCvgOpt 0
+n@_opt1
+OL;O;10.7c;67
+Yafifo_if
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?MS<6B^SFDRA;h0HAk:TU2
+IeiQ`C`S>HZWT]3Q>DKWUK0
+!s105 afifo_if_sv_unit
+S1
+R0
+w1726468972
+8../ENV/afifo_if.sv
+F../ENV/afifo_if.sv
+L0 3
+OL;L;10.4e;61
+!s108 1742204583.000000
+!s107 ../TEST/afifo_test.sv|../ENV/afifo_env.sv|../ENV/afifo_sb.sv|../ENV/afifo_rf.sv|../ENV/afifo_r_mon.sv|../ENV/afifo_r_driver.sv|../ENV/afifo_w_mon.sv|../ENV/afifo_w_driver.sv|../ENV/afifo_gen.sv|../ENV/afifo_trans.sv|../ENV/afifo_defines.sv|../TOP/afifo_top.sv|../TEST/afifo_pkg.sv|../RTL/async_fifo.sv|../ENV/afifo_if.sv|
+!s90 ../ENV/afifo_if.sv|../RTL/async_fifo.sv|../TEST/afifo_pkg.sv|../TOP/afifo_top.sv|+incdir+../ENV|+incdir+../TEST|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 +incdir+../ENV +incdir+../TEST -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Yafifo_interface
+Z7 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z8 !s110 1752101603
+!i10b 1
+!s100 <P2hk?J<48k<U=CN>X]^@2
+I?0JR9FWCo>aM`4^QWDNSE2
+R4
+!s105 afifo_interface_sv_unit
+S1
+R0
+w1751308805
+8../ENV/afifo_interface.sv
+F../ENV/afifo_interface.sv
+L0 2
+Z9 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z10 !s108 1752101603.000000
+Z11 !s107 ../TEST/afifo_test.sv|../TEST/write_with_reset_test.sv|../TEST/write_then_read_test.sv|../TEST/write_read_test.sv|../TEST/medium_range_write_test.sv|../TEST/low_range_write_test.sv|../TEST/high_range_write_test.sv|../TEST/half_write_test.sv|../TEST/read_only_test.sv|../TEST/write_only_test.sv|../ENV/afifo_env.sv|../ENV/afifo_sb.sv|../ENV/afifo_rf.sv|../ENV/afifo_mon.sv|../ENV/afifo_drv.sv|../ENV/afifo_gen.sv|../ENV/afifo_trans.sv|../ENV/afifo_defines.sv|../TOP/afifo_top.sv|../TEST/afifo_pkg.sv|../RTL/async_fifo.sv|../ENV/afifo_interface.sv|
+Z12 !s90 ../ENV/afifo_interface.sv|../RTL/async_fifo.sv|../TEST/afifo_pkg.sv|../TOP/afifo_top.sv|+incdir+../ENV|+incdir+../TEST|
+!i113 0
+R5
+R6
+R3
+Xafifo_pkg
+!s115 afifo_interface
+R7
+R8
+!i10b 1
+!s100 Aj^UM357iDTZ^3ClM?0^D1
+IV@nM9S=z2GQ=CUSFXIzVF1
+VV@nM9S=z2GQ=CUSFXIzVF1
+S1
+R0
+w1751346152
+8../TEST/afifo_pkg.sv
+F../TEST/afifo_pkg.sv
+F../ENV/afifo_defines.sv
+F../ENV/afifo_trans.sv
+F../ENV/afifo_gen.sv
+F../ENV/afifo_drv.sv
+F../ENV/afifo_mon.sv
+F../ENV/afifo_rf.sv
+F../ENV/afifo_sb.sv
+F../ENV/afifo_env.sv
+F../TEST/write_only_test.sv
+F../TEST/read_only_test.sv
+F../TEST/half_write_test.sv
+F../TEST/high_range_write_test.sv
+F../TEST/low_range_write_test.sv
+F../TEST/medium_range_write_test.sv
+F../TEST/write_read_test.sv
+F../TEST/write_then_read_test.sv
+F../TEST/write_with_reset_test.sv
+F../TEST/afifo_test.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R5
+R6
+R3
+Xafifo_top_sv_unit
+R7
+Z13 DXx4 work 9 afifo_pkg 0 22 V@nM9S=z2GQ=CUSFXIzVF1
+VX:U:QLi2zSe3KU?4Z2hL?1
+r1
+!s85 0
+!i10b 1
+!s100 iOlZ=cGGnh2K4:4z:K0?c2
+IX:U:QLi2zSe3KU?4Z2hL?1
+!i103 1
+S1
+R0
+Z14 w1751306613
+Z15 8../TOP/afifo_top.sv
+Z16 F../TOP/afifo_top.sv
+L0 2
+R9
+31
+R10
+R11
+R12
+!i113 0
+R5
+R6
+R3
+vasync_fifo
+R7
+R8
+!i10b 1
+!s100 ZCA[bP3`oC>kID>Cb@KYa2
+I8YnB2g2N7bKBmbb_?LNoL0
+R4
+!s105 async_fifo_sv_unit
+S1
+R0
+w1722173251
+8../RTL/async_fifo.sv
+F../RTL/async_fifo.sv
+L0 4
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R5
+R6
+R3
+vtop
+R7
+R13
+DXx4 work 17 afifo_top_sv_unit 0 22 X:U:QLi2zSe3KU?4Z2hL?1
+R4
+r1
+!s85 0
+!i10b 1
+!s100 eZCjI<`Rk?Y4JQeOAMOmP1
+I3Mj4j^OgTO]0mJFaFOZfD0
+!s105 afifo_top_sv_unit
+S1
+R0
+R14
+R15
+R16
+L0 4
+R9
+31
+R10
+R11
+R12
+!i113 0
+R5
+R6
+R3

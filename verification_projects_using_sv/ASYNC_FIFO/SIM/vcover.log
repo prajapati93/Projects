@@ -1,0 +1,15 @@
+QuestaSim-64 vcover 10.4e Coverage Utility 2016.04 Apr  9 2016
+Start time: 10:34:04 on Jul 01,2025
+vcover merge cov_mrg write_only half_write write_read write_then_read write_with_reset high_range_write low_range_write medium_range_write 
+Merging file write_only
+Merging file half_write
+Merging file write_read
+Merging file write_then_read
+Merging file write_with_reset
+Merging file high_range_write
+Merging file low_range_write
+Merging file medium_range_write
+Writing merged result to cov_mrg
+
+End time: 10:34:04 on Jul 01,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

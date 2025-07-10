@@ -1,0 +1,8 @@
+var g_data = {'dummy':null,
+'1':'../ENV/afifo_gen.sv',
+'2':'../ENV/afifo_sb.sv',
+'7':'../TEST/afifo_pkg.sv',
+'4':'../TEST/half_write_test.sv',
+'3':'../TEST/write_only_test.sv',
+'5':'../TEST/write_read_test.sv',
+'6':'../TEST/write_then_read_test.sv'};

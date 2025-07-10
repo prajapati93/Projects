@@ -1,0 +1,1693 @@
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall medium_range_write; run -all; exit" "+medium_range_write_test" 
+# Start time: 10:34:00 on Jul 01,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# //  Questa Sim-64
+# //  Version 10.4e win64 Apr  9 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.afifo_interface(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# 
+# coverage save -onexit -assert -directive -cvg -codeall medium_range_write
+#  run -all
+# time:30, size: 1, DIN: 37
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 141
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 42
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 181
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 245
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, size: 6, DIN: 62
+#                  175 DUT: full: 0
+#                  189 DUT: full: 0
+# time:196, size: 7, DIN: 69
+#                  203 DUT: full: 0
+#                  217 DUT: full: 0
+# time:224, size: 8, DIN: 158
+#                  231 DUT: full: 0
+#                  245 DUT: almost_full: 1
+# time:252, size: 9, DIN: 32
+# time:280, size: 10, DIN: 21
+# time:308, size: 11, DIN: 10
+# time:336, size: 12, DIN: 101
+# time:364, size: 13, DIN: 123
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 0, DOUT: 0  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 0 ##
+# time:392, EXP_DATA: 37
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 37, DOUT: 141 ##
+# time:420, EXP_DATA: 141
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 141, DOUT: 62 ##
+# time:448, EXP_DATA: 42
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 42, DOUT: 173 ##
+# time:476, EXP_DATA: 181
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 62 ##
+# time:504, EXP_DATA: 245
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 245, DOUT: 57 ##
+# time:532, EXP_DATA: 62
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 62, DOUT: 149 ##
+# time:560, EXP_DATA: 69
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 69, DOUT: 149 ##
+# time:588, EXP_DATA: 158
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 158, DOUT: 149 ##
+# time:616, EXP_DATA: 32
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 32, DOUT: 149 ##
+# time:644, EXP_DATA: 21
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 21, DOUT: 149 ##
+# time:672, EXP_DATA: 10
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 10, DOUT: 149 ##
+# time:700, EXP_DATA: 101
+# EXP_ALMOST_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 101, DOUT: 149 ##
+# time:728, EXP_DATA: 123
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 123, DOUT: 149 ##
+# time:756, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:784, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:812, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:840, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:868, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:896, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:924, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:952, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:980, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 149 ##
+# time:1008, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 10:34:04 on Jul 01,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall write_only; run -all; exit" "+write_only_test" 
+# Start time: 04:23:29 on Jul 10,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall write_only
+#  run -all
+# time:30, size: 1, DIN: 226
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 253
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 149
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 140
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 213
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, size: 6, DIN: 10
+#                  175 DUT: full: 0
+#                  189 DUT: full: 0
+# time:196, size: 7, DIN: 241
+#                  203 DUT: full: 0
+#                  217 DUT: full: 0
+# time:224, size: 8, DIN: 6
+#                  231 DUT: full: 0
+#                  245 DUT: almost_full: 1
+# time:252, size: 9, DIN: 48
+# time:280, size: 10, DIN: 129
+# time:308, size: 11, DIN: 171
+# time:336, size: 12, DIN: 81
+# time:364, size: 13, DIN: 153
+# time:392, size: 14, DIN: 153
+# EXP_ALMOST_FULL: 1
+# time:420, size: 15, DIN: 153
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# EXP_FULL: 1
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:23:34 on Jul 10,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall read_only; run -all; exit" "+read_only_test" 
+# Start time: 04:23:37 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall read_only
+#  run -all
+# time:30, size: 1, DIN: 226
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 253
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 149
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 140
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 213
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, size: 6, DIN: 10
+#                  175 DUT: full: 0
+#                  189 DUT: full: 0
+# time:196, size: 7, DIN: 241
+#                  203 DUT: full: 0
+#                  217 DUT: full: 0
+# time:224, size: 8, DIN: 6
+#                  231 DUT: full: 0
+#                  245 DUT: almost_full: 1
+# time:252, size: 9, DIN: 48
+# time:280, size: 10, DIN: 129
+# time:308, size: 11, DIN: 171
+# time:336, size: 12, DIN: 81
+# time:364, size: 13, DIN: 153
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 0, DOUT: 0  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 0 ##
+# time:392, EXP_DATA: 226
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 253 ##
+# time:420, EXP_DATA: 253
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 227 ##
+# time:448, EXP_DATA: 149
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 255 ##
+# time:476, EXP_DATA: 140
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 10 ##
+# time:504, EXP_DATA: 213
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 0 ##
+# time:532, EXP_DATA: 10
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 10, DOUT: 127 ##
+# time:560, EXP_DATA: 241
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 241, DOUT: 127 ##
+# time:588, EXP_DATA: 6
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 6, DOUT: 127 ##
+# time:616, EXP_DATA: 48
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 48, DOUT: 127 ##
+# time:644, EXP_DATA: 129
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 129, DOUT: 127 ##
+# time:672, EXP_DATA: 171
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 171, DOUT: 127 ##
+# time:700, EXP_DATA: 81
+# EXP_ALMOST_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 81, DOUT: 127 ##
+# time:728, EXP_DATA: 153
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 127 ##
+# time:756, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:784, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:812, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:840, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:868, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:896, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:924, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:952, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:980, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:1008, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:23:41 on Jul 10,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall half_write; run -all; exit" "+half_write_test" 
+# Start time: 04:23:44 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall half_write
+#  run -all
+# time:30, size: 1, DIN: 226
+# time:30, EXP_DATA: 226
+# EXP_EMPTY: 1
+#                   35 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 0 ##
+#                   49 DUT: full: 0
+# time:56, size: 1, DIN: 253
+# time:56, EXP_DATA: 253
+# EXP_EMPTY: 1
+#                   63 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 31 ##
+#                   77 DUT: full: 0
+# time:84, size: 1, DIN: 149
+# time:84, EXP_DATA: 149
+# EXP_EMPTY: 1
+#                   91 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 148 ##
+#                  105 DUT: full: 0
+# time:112, size: 1, DIN: 140
+# time:112, EXP_DATA: 140
+# EXP_EMPTY: 1
+#                  119 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 227 ##
+#                  133 DUT: full: 0
+# time:140, size: 1, DIN: 213
+# time:140, EXP_DATA: 213
+# EXP_EMPTY: 1
+#                  147 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 255 ##
+#                  161 DUT: full: 0
+# time:168, size: 1, DIN: 181
+# time:168, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  175 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  189 DUT: full: 0
+# time:196, size: 1, DIN: 181
+# time:196, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  203 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  217 DUT: full: 0
+# time:224, size: 1, DIN: 181
+# time:224, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  231 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  245 DUT: full: 0
+# time:252, size: 1, DIN: 181
+# time:252, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  259 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  273 DUT: full: 0
+# time:280, size: 1, DIN: 181
+# time:280, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  287 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  301 DUT: full: 0
+# time:308, size: 1, DIN: 181
+# time:308, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  315 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  329 DUT: full: 0
+# time:336, size: 1, DIN: 181
+# time:336, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  343 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  357 DUT: full: 0
+# time:364, size: 1, DIN: 181
+# time:364, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  371 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  385 DUT: full: 0
+# time:392, size: 1, DIN: 181
+# time:392, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  399 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  413 DUT: full: 0
+# time:420, size: 1, DIN: 181
+# time:420, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  427 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  441 DUT: full: 0
+# time:448, size: 1, DIN: 181
+# time:448, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  455 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  469 DUT: full: 0
+# time:476, size: 1, DIN: 181
+# time:476, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  483 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  497 DUT: full: 0
+# time:504, size: 1, DIN: 181
+# time:504, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  511 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  525 DUT: full: 0
+# time:532, size: 1, DIN: 181
+# time:532, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  539 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  553 DUT: full: 0
+# time:560, size: 1, DIN: 181
+# time:560, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  567 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  581 DUT: full: 0
+# time:588, size: 1, DIN: 181
+# time:588, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  595 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  609 DUT: full: 0
+# time:616, size: 1, DIN: 181
+# time:616, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  623 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  637 DUT: full: 0
+# time:644, size: 1, DIN: 181
+# time:644, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  651 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  665 DUT: full: 0
+# time:672, size: 1, DIN: 181
+# time:672, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  679 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  693 DUT: full: 0
+# time:700, size: 1, DIN: 181
+# time:700, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  707 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  721 DUT: full: 0
+# time:728, size: 1, DIN: 181
+# time:728, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  735 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  749 DUT: full: 0
+# time:756, size: 1, DIN: 181
+# time:756, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  763 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  777 DUT: full: 0
+# time:784, size: 1, DIN: 181
+# time:784, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  791 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  805 DUT: full: 0
+# time:812, size: 1, DIN: 181
+# time:812, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  819 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  833 DUT: full: 0
+# time:840, size: 1, DIN: 181
+# time:840, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  847 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  861 DUT: full: 0
+# time:868, size: 1, DIN: 181
+# time:868, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  875 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  889 DUT: full: 0
+# time:896, size: 1, DIN: 181
+# time:896, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  903 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  917 DUT: full: 0
+# time:924, size: 1, DIN: 181
+# time:924, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  931 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  945 DUT: full: 0
+# time:952, size: 1, DIN: 181
+# time:952, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  959 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                  973 DUT: full: 0
+# time:980, size: 1, DIN: 181
+# time:980, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                  987 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 181, DOUT: 181  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 181, DOUT: 181 ##
+#                 1001 DUT: full: 0
+# time:1008, size: 1, DIN: 181
+# time:1008, EXP_DATA: 181
+# EXP_EMPTY: 1
+#                 1015 DUT: full: 0
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:23:48 on Jul 10,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall write_read; run -all; exit" "+write_read_test" 
+# Start time: 04:23:51 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall write_read
+#  run -all
+# time:30, size: 1, DIN: 226
+# time:30, EXP_DATA: 226
+# EXP_EMPTY: 1
+#                   35 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 0 ##
+#                   49 DUT: full: 0
+# time:56, size: 1, DIN: 253
+# time:56, EXP_DATA: 253
+# EXP_EMPTY: 1
+#                   63 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 31 ##
+#                   77 DUT: full: 0
+# time:84, size: 1, DIN: 149
+# time:84, EXP_DATA: 149
+# EXP_EMPTY: 1
+#                   91 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 148 ##
+#                  105 DUT: full: 0
+# time:112, size: 1, DIN: 140
+# time:112, EXP_DATA: 140
+# EXP_EMPTY: 1
+#                  119 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 227 ##
+#                  133 DUT: full: 0
+# time:140, size: 1, DIN: 213
+# time:140, EXP_DATA: 213
+# EXP_EMPTY: 1
+#                  147 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 255 ##
+#                  161 DUT: full: 0
+# time:168, size: 1, DIN: 10
+# time:168, EXP_DATA: 10
+# EXP_EMPTY: 1
+#                  175 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 10, DOUT: 181 ##
+#                  189 DUT: full: 0
+# time:196, size: 1, DIN: 241
+# time:196, EXP_DATA: 241
+# EXP_EMPTY: 1
+#                  203 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 241, DOUT: 214 ##
+#                  217 DUT: full: 0
+# time:224, size: 1, DIN: 6
+# time:224, EXP_DATA: 6
+# EXP_EMPTY: 1
+#                  231 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 6, DOUT: 0 ##
+#                  245 DUT: full: 0
+# time:252, size: 1, DIN: 48
+# time:252, EXP_DATA: 48
+# EXP_EMPTY: 1
+#                  259 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 48, DOUT: 127 ##
+#                  273 DUT: full: 0
+# time:280, size: 1, DIN: 129
+# time:280, EXP_DATA: 129
+# EXP_EMPTY: 1
+#                  287 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 129, DOUT: 166 ##
+#                  301 DUT: full: 0
+# time:308, size: 1, DIN: 171
+# time:308, EXP_DATA: 171
+# EXP_EMPTY: 1
+#                  315 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 171, DOUT: 169 ##
+#                  329 DUT: full: 0
+# time:336, size: 1, DIN: 81
+# time:336, EXP_DATA: 81
+# EXP_EMPTY: 1
+#                  343 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 81, DOUT: 92 ##
+#                  357 DUT: full: 0
+# time:364, size: 1, DIN: 153
+# time:364, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  371 DUT: full: 0
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 78 ##
+#                  385 DUT: full: 0
+# time:392, size: 1, DIN: 153
+# time:392, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  399 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  413 DUT: full: 0
+# time:420, size: 1, DIN: 153
+# time:420, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  427 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  441 DUT: full: 0
+# time:448, size: 1, DIN: 153
+# time:448, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  455 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  469 DUT: full: 0
+# time:476, size: 1, DIN: 153
+# time:476, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  483 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  497 DUT: full: 0
+# time:504, size: 1, DIN: 153
+# time:504, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  511 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  525 DUT: full: 0
+# time:532, size: 1, DIN: 153
+# time:532, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  539 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  553 DUT: full: 0
+# time:560, size: 1, DIN: 153
+# time:560, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  567 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  581 DUT: full: 0
+# time:588, size: 1, DIN: 153
+# time:588, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  595 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  609 DUT: full: 0
+# time:616, size: 1, DIN: 153
+# time:616, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  623 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  637 DUT: full: 0
+# time:644, size: 1, DIN: 153
+# time:644, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  651 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  665 DUT: full: 0
+# time:672, size: 1, DIN: 153
+# time:672, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  679 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  693 DUT: full: 0
+# time:700, size: 1, DIN: 153
+# time:700, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  707 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  721 DUT: full: 0
+# time:728, size: 1, DIN: 153
+# time:728, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  735 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  749 DUT: full: 0
+# time:756, size: 1, DIN: 153
+# time:756, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  763 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  777 DUT: full: 0
+# time:784, size: 1, DIN: 153
+# time:784, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  791 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  805 DUT: full: 0
+# time:812, size: 1, DIN: 153
+# time:812, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  819 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  833 DUT: full: 0
+# time:840, size: 1, DIN: 153
+# time:840, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  847 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  861 DUT: full: 0
+# time:868, size: 1, DIN: 153
+# time:868, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  875 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  889 DUT: full: 0
+# time:896, size: 1, DIN: 153
+# time:896, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  903 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  917 DUT: full: 0
+# time:924, size: 1, DIN: 153
+# time:924, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  931 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  945 DUT: full: 0
+# time:952, size: 1, DIN: 153
+# time:952, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  959 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                  973 DUT: full: 0
+# time:980, size: 1, DIN: 153
+# time:980, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                  987 DUT: full: 0
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 153, DOUT: 153  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 153 ##
+#                 1001 DUT: full: 0
+# time:1008, size: 1, DIN: 153
+# time:1008, EXP_DATA: 153
+# EXP_EMPTY: 1
+#                 1015 DUT: full: 0
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:23:54 on Jul 10,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall write_then_read; run -all; exit" "+write_then_read_test" 
+# Start time: 04:23:57 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall write_then_read
+#  run -all
+# time:30, size: 1, DIN: 226
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 253
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 149
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 140
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 213
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, size: 6, DIN: 10
+#                  175 DUT: full: 0
+#                  189 DUT: full: 0
+# time:196, size: 7, DIN: 241
+#                  203 DUT: full: 0
+#                  217 DUT: full: 0
+# time:224, size: 8, DIN: 6
+#                  231 DUT: full: 0
+#                  245 DUT: almost_full: 1
+# time:252, size: 9, DIN: 48
+# time:280, size: 10, DIN: 129
+# time:308, size: 11, DIN: 171
+# time:336, size: 12, DIN: 81
+# time:364, size: 13, DIN: 153
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 0, DOUT: 0  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 0 ##
+# time:392, EXP_DATA: 226
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 253 ##
+# time:420, EXP_DATA: 253
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 227 ##
+# time:448, EXP_DATA: 149
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 255 ##
+# time:476, EXP_DATA: 140
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 10 ##
+# time:504, EXP_DATA: 213
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 0 ##
+# time:532, EXP_DATA: 10
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 10, DOUT: 127 ##
+# time:560, EXP_DATA: 241
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 241, DOUT: 127 ##
+# time:588, EXP_DATA: 6
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 6, DOUT: 127 ##
+# time:616, EXP_DATA: 48
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 48, DOUT: 127 ##
+# time:644, EXP_DATA: 129
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 129, DOUT: 127 ##
+# time:672, EXP_DATA: 171
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 171, DOUT: 127 ##
+# time:700, EXP_DATA: 81
+# EXP_ALMOST_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 81, DOUT: 127 ##
+# time:728, size: 2, DIN: 220
+#                  735 DUT: full: 0
+#                  749 DUT: full: 0
+# time:756, size: 3, DIN: 86
+#                  763 DUT: full: 0
+#                  777 DUT: full: 0
+# time:784, size: 4, DIN: 142
+#                  791 DUT: full: 0
+#                  805 DUT: full: 0
+# time:812, size: 5, DIN: 168
+#                  819 DUT: full: 0
+#                  833 DUT: full: 0
+# time:840, size: 6, DIN: 176
+#                  847 DUT: full: 0
+#                  861 DUT: full: 0
+# time:868, size: 7, DIN: 94
+#                  875 DUT: full: 0
+#                  889 DUT: full: 0
+# time:896, size: 8, DIN: 191
+#                  903 DUT: full: 0
+#                  917 DUT: full: 0
+# time:924, size: 9, DIN: 244
+#                  931 DUT: full: 0
+#                  945 DUT: almost_full: 1
+# time:952, size: 10, DIN: 72
+# time:980, size: 11, DIN: 233
+# time:1008, size: 12, DIN: 123
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:24:00 on Jul 10,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall write_with_reset; run -all; exit" "+write_with_reset_test" 
+# Start time: 04:24:03 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall write_with_reset
+#  run -all
+# time:30, size: 1, DIN: 226
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 253
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 149
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 140
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 213
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, EXP_DATA: 226
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 226, DOUT: 226  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 226 ##
+# time:196, EXP_DATA: 253
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 148 ##
+# time:224, EXP_DATA: 149
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 140 ##
+# time:252, EXP_DATA: 140
+# EXP_ALMOST_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 181 ##
+# time:280, EXP_DATA: 213
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 181 ##
+# time:308, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:336, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:364, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:392, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:420, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:448, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:476, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:504, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:532, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:560, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:588, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:616, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:644, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:672, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:700, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:728, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:756, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:784, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:812, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:840, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:868, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:896, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:924, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:952, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:980, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 181 ##
+# time:1008, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:24:05 on Jul 10,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall high_range_write; run -all; exit" "+high_range_write_test" 
+# Start time: 04:24:07 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall high_range_write
+#  run -all
+# time:30, size: 1, DIN: 226
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 253
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 149
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 140
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 213
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, size: 6, DIN: 10
+#                  175 DUT: full: 0
+#                  189 DUT: full: 0
+# time:196, size: 7, DIN: 241
+#                  203 DUT: full: 0
+#                  217 DUT: full: 0
+# time:224, size: 8, DIN: 6
+#                  231 DUT: full: 0
+#                  245 DUT: almost_full: 1
+# time:252, size: 9, DIN: 48
+# time:280, size: 10, DIN: 129
+# time:308, size: 11, DIN: 171
+# time:336, size: 12, DIN: 81
+# time:364, size: 13, DIN: 153
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 0, DOUT: 0  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 0 ##
+# time:392, EXP_DATA: 226
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 253 ##
+# time:420, EXP_DATA: 253
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 227 ##
+# time:448, EXP_DATA: 149
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 255 ##
+# time:476, EXP_DATA: 140
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 10 ##
+# time:504, EXP_DATA: 213
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 0 ##
+# time:532, EXP_DATA: 10
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 10, DOUT: 127 ##
+# time:560, EXP_DATA: 241
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 241, DOUT: 127 ##
+# time:588, EXP_DATA: 6
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 6, DOUT: 127 ##
+# time:616, EXP_DATA: 48
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 48, DOUT: 127 ##
+# time:644, EXP_DATA: 129
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 129, DOUT: 127 ##
+# time:672, EXP_DATA: 171
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 171, DOUT: 127 ##
+# time:700, EXP_DATA: 81
+# EXP_ALMOST_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 81, DOUT: 127 ##
+# time:728, EXP_DATA: 153
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 127 ##
+# time:756, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:784, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:812, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:840, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:868, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:896, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:924, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:952, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:980, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:1008, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:24:10 on Jul 10,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall low_range_write; run -all; exit" "+low_range_write_test" 
+# Start time: 04:24:13 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall low_range_write
+#  run -all
+# time:30, size: 1, DIN: 226
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 253
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 149
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 140
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 213
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, size: 6, DIN: 10
+#                  175 DUT: full: 0
+#                  189 DUT: full: 0
+# time:196, size: 7, DIN: 241
+#                  203 DUT: full: 0
+#                  217 DUT: full: 0
+# time:224, size: 8, DIN: 6
+#                  231 DUT: full: 0
+#                  245 DUT: almost_full: 1
+# time:252, size: 9, DIN: 48
+# time:280, size: 10, DIN: 129
+# time:308, size: 11, DIN: 171
+# time:336, size: 12, DIN: 81
+# time:364, size: 13, DIN: 153
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 0, DOUT: 0  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 0 ##
+# time:392, EXP_DATA: 226
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 253 ##
+# time:420, EXP_DATA: 253
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 227 ##
+# time:448, EXP_DATA: 149
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 255 ##
+# time:476, EXP_DATA: 140
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 10 ##
+# time:504, EXP_DATA: 213
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 0 ##
+# time:532, EXP_DATA: 10
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 10, DOUT: 127 ##
+# time:560, EXP_DATA: 241
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 241, DOUT: 127 ##
+# time:588, EXP_DATA: 6
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 6, DOUT: 127 ##
+# time:616, EXP_DATA: 48
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 48, DOUT: 127 ##
+# time:644, EXP_DATA: 129
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 129, DOUT: 127 ##
+# time:672, EXP_DATA: 171
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 171, DOUT: 127 ##
+# time:700, EXP_DATA: 81
+# EXP_ALMOST_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 81, DOUT: 127 ##
+# time:728, EXP_DATA: 153
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 127 ##
+# time:756, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:784, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:812, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:840, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:868, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:896, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:924, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:952, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:980, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:1008, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:24:16 on Jul 10,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1
+# vsim -coverage -vopt top -c -do "coverage save -onexit -assert -directive -cvg -codeall medium_range_write; run -all; exit" "+medium_range_write_test" 
+# Start time: 04:24:19 on Jul 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.afifo_interface(fast)
+# Loading work.afifo_pkg(fast)
+# Loading work.afifo_top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg -codeall medium_range_write
+#  run -all
+# time:30, size: 1, DIN: 226
+#                   35 DUT: full: 0
+#                   49 DUT: full: 0
+# time:56, size: 2, DIN: 253
+#                   63 DUT: full: 0
+#                   77 DUT: full: 0
+# time:84, size: 3, DIN: 149
+#                   91 DUT: full: 0
+#                  105 DUT: full: 0
+# time:112, size: 4, DIN: 140
+#                  119 DUT: full: 0
+#                  133 DUT: full: 0
+# time:140, size: 5, DIN: 213
+#                  147 DUT: full: 0
+#                  161 DUT: full: 0
+# time:168, size: 6, DIN: 10
+#                  175 DUT: full: 0
+#                  189 DUT: full: 0
+# time:196, size: 7, DIN: 241
+#                  203 DUT: full: 0
+#                  217 DUT: full: 0
+# time:224, size: 8, DIN: 6
+#                  231 DUT: full: 0
+#                  245 DUT: almost_full: 1
+# time:252, size: 9, DIN: 48
+# time:280, size: 10, DIN: 129
+# time:308, size: 11, DIN: 171
+# time:336, size: 12, DIN: 81
+# time:364, size: 13, DIN: 153
+# ----------------------------SCO-MATCH---------------------------------
+# [DATA MATCH] || EXP_DATA: 0, DOUT: 0  ||
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 0 ##
+# time:392, EXP_DATA: 226
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 226, DOUT: 253 ##
+# time:420, EXP_DATA: 253
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 253, DOUT: 227 ##
+# time:448, EXP_DATA: 149
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 149, DOUT: 255 ##
+# time:476, EXP_DATA: 140
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 140, DOUT: 10 ##
+# time:504, EXP_DATA: 213
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 213, DOUT: 0 ##
+# time:532, EXP_DATA: 10
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 10, DOUT: 127 ##
+# time:560, EXP_DATA: 241
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 241, DOUT: 127 ##
+# time:588, EXP_DATA: 6
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 6, DOUT: 127 ##
+# time:616, EXP_DATA: 48
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 48, DOUT: 127 ##
+# time:644, EXP_DATA: 129
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 129, DOUT: 127 ##
+# time:672, EXP_DATA: 171
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 171, DOUT: 127 ##
+# time:700, EXP_DATA: 81
+# EXP_ALMOST_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 81, DOUT: 127 ##
+# time:728, EXP_DATA: 153
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 153, DOUT: 127 ##
+# time:756, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:784, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:812, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:840, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:868, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:896, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:924, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:952, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:980, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ------!!!!!!----------------SCO-MIS-MATCH----------------!!!!!!-------
+# [DATA MIS-MATCH] ## EXP_DATA: 0, DOUT: 127 ##
+# time:1008, EXP_DATA: 0
+# EXP_EMPTY: 1
+# ** Note: $finish    : ../TOP/afifo_top.sv(46)
+#    Time: 1021 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:24:21 on Jul 10,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
