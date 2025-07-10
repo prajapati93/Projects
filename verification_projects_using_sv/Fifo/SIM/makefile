@@ -4,7 +4,7 @@ PKG = ../TEST/fifo_pkg.sv
 TP = ../TOP/fifo_top.sv
 
 lib:
-	vilb work
+	vlib work
 
 comp:
 	vlog $(INF) $(RTL) $(PKG) $(TP) +incdir+../ENV +incdir+../TEST
